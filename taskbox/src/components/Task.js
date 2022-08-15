@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Task({ task: { id, title, state }, onArchiveTask, onPinTask }) {
+export default function Task({ task: { id, title, state, updatedAt }, onArchiveTask, onPinTask }) {
   return (
     <div className={`list-item ${state}`}>
       <div style={{ display: 'flex' }}>
